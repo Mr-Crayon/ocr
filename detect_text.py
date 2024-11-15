@@ -53,7 +53,7 @@ def detect_text(event): # Detect the text in the file
       blocks.append(block['Text'])
 
   ## Iterate through the blocks to collect the text we need
-  for i in range(1, len(blocks)):
+  for i in range(0, len(blocks)):
     if "In:" in blocks[i]:
       if in_status == False:
         if check_int(blocks[i+1]):
